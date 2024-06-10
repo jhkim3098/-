@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Post</title>
+</head>
+<body>
+    <h1>Edit Post</h1>
+    <form action="/edit_post/{{ title }}" method="post">
+        <label>Title:</label><br>
+        <input type="text" name="title" value="{{ title }}" readonly><br>
+        <label>Content:</label><br>
+        <textarea name="content" rows="10" cols="50">{{ content }}</textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
